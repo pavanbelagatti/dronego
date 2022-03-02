@@ -6,8 +6,9 @@ steps:
 - name: test
   image: golang
   commands:
-  - go test
+  - go get
   - go build
+  - go test
 
 - name: docker  
   image: plugins/docker
